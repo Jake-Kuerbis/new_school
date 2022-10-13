@@ -1,0 +1,260 @@
+@font-face {
+    font-family: jaf-herb, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url();
+}
+
+@font-face {
+    font-family: Maleo;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-Regular.woff);
+}
+
+@font-face {
+    font-family: MaleoI;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-MediumItalic.woff);
+}
+
+@font-face {
+    font-family: PP regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+}
+
+@font-face {
+    font-family: PP light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+}
+
+@font-face {
+    font-family: PP Sans-regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+}
+
+@font-face {
+    font-family: PP Sans-light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+}
+
+@font-face {
+    font-family: Sabon-bold;
+    src: url(Sabon-Font/Sabon_Bold.ttf);
+}
+
+@font-face {
+    font-family: Sabon-italic;
+    src: url(Sabon-Font/Sabon_Italic.ttf);
+}
+
+@font-face {
+    font-family: Sabon-roman;
+    src: url(Sabon-Font/Sabon_Roman.ttf);
+}
+
+@font-face {
+    font-family: halyard-text,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    color: rgb(255, 255, 255);
+    font-family: PP Sans-light;
+    font-size: 1em;
+    align-content: center;
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 1s;
+}
+
+.home:hover {
+    transform: translate(10px);
+    color: rgb(255, 206, 44);
+}
+ 
+.main {
+    color: rgb(255, 255, 255);
+    font-family: PP Sans-light;
+    font-size: 1em;
+    align-content: center;
+    float: right;
+    padding: 10px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.italic {
+    font-family: PP light;
+    font-style: italic;
+}
+
+.center {
+    display: grid;
+    position: relative;
+    margin-top: 5%;
+}
+
+.title {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    padding: 10px;
+    font-family: PP light;
+    color: white;
+    font-size: 2em;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: -75px;
+    line-height: 1.1;
+}
+
+.poly {
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    margin-top: 55px;
+    align-content: center;
+    height: 15em;
+    width: 22.5%;
+    border-radius: 40px;
+}
+
+.poly:hover {
+    transition: ease-in-out;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    font-family: PP Sans-light;
+    font-size: 1em;
+    align-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.youth {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 1s;
+}
+
+.name {
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 1s;
+}
+
+
+/*
+Herb Regular 
+
+font-family: jaf-herb, serif;
+font-weight: 400;
+font-style: normal;
+
+Herb Bold
+
+font-family: jaf-herb, serif;
+font-weight: 700;
+font-style: normal;
+
+Herb Condensed
+
+font-family: jaf-herb-condensed, serif;
+font-weight: 400;
+font-style: normal;
+
+Herb Condensed Bold
+
+font-family: jaf-herb-condensed, serif;
+font-weight: 700;
+font-style: normal;
+
+Bely Display Regular
+
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Bely Italic
+
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+Bely Regular
+
+font-family: bely, serif;
+font-weight: 400;
+font-style: normal;
+
+Bely Bold
+
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+
+Bely Bold Italic
+
+font-family: bely, serif;
+font-weight: 700;
+font-style: italic;
+
+Bebas Neue Regular
+
+font-family: bebas-neue, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: gitan-latin,sans-serif;
+font-weight: 400;
+font-style: italic;
+*/
