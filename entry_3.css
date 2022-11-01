@@ -79,7 +79,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 :any-link {
@@ -92,51 +92,53 @@ body {
     color: rgb(255, 206, 44);
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+.image-four {
+    height: 250px;
+    width: auto;
+}
 
-.header {
+h1 {
     color: white;
-    font-family: PP light;
     font-size: 2em;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
+    font-family: PP light;
+    text-align: left;
+    margin-top: 50px;
+    text-align: center;
 }
 
-.left {
-    font-style: italic;
+h1:hover {
+    color: rgb(255, 206, 44)
 }
 
-.right {
-    align-content: center;
+  
+  .poly {
+    display: inline-block;
+    grid-column: 1;
+    grid-row: 1;
     margin: auto;
-    margin-right: 10px;
-    
-}
-
-.next:hover {
-    transform: translate(0, 10px);
-    color: rgb(255, 206, 44);
-}
-
-pre {
-    margin-top: 70px;
-    color: white;
-    display: flex;
-    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 150px;
+    padding: 5%;
+    align-content: center;
+    height: 15em;
+    width: 22.5%;
+    border-radius: 40px;
 }
 
 .footer {
     color: rgb(255, 255, 255);
     font-family: PP Sans-light;
     font-size: 1em;
-    margin-top: 95px;
+    margin-top: 20px;
     align-content: center;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.next:hover {
+    transform: translate(0, 10px);
+    color: rgb(255, 206, 44);
 }
 
 .back {
@@ -154,3 +156,4 @@ pre {
     top: 0;
     transition: ease-in-out 0.5s;
 }
+  

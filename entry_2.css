@@ -111,9 +111,18 @@ h1 {
     vertical-align: middle;
 }
 
+.float {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-four {
+    height: 250px;
+    width: auto;
+}
+
 .image-two {
     width: 40%;
-    float: right;
     height: auto;
     background-color: rgb(255, 206, 44);
     border-radius: 15px;
@@ -130,7 +139,6 @@ h1 {
 .image-three {
     position: absolute;
     width: 39%;
-    float: left;
     height: auto;
     display: none;
     margin-top: 633px;
@@ -141,7 +149,7 @@ h1 {
 
 .image-two:hover {
     background-color:rgb(255, 255, 255);
-    transform: translate(50px);
+    transform: translate(0 50px);
     padding-left: 58%;
 }
 
