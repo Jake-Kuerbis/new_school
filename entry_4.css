@@ -1,0 +1,220 @@
+@font-face {
+    font-family: jaf-herb, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url();
+}
+
+@font-face {
+    font-family: Maleo;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-Regular.woff);
+}
+
+@font-face {
+    font-family: MaleoI;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-MediumItalic.woff);
+}
+
+@font-face {
+    font-family: PP regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+}
+
+@font-face {
+    font-family: PP light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+}
+
+@font-face {
+    font-family: PP Sans-regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+}
+
+@font-face {
+    font-family: PP Sans-light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+}
+
+@font-face {
+    font-family: Sabon-bold;
+    src: url(Sabon-Font/Sabon_Bold.ttf);
+}
+
+@font-face {
+    font-family: Sabon-italic;
+    src: url(Sabon-Font/Sabon_Italic.ttf);
+}
+
+@font-face {
+    font-family: Sabon-roman;
+    src: url(Sabon-Font/Sabon_Roman.ttf);
+}
+
+@font-face {
+    font-family: halyard-text,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+body {
+    background-color: black;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+h1 {
+    color: white;
+    font-size: 1em;
+    font-family: PP Sans-light;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#three-d {
+    display: none;
+}
+
+#three-d-eight {
+    display: none;
+}
+
+#three-d-four {
+    display: none;
+}
+
+p {
+    color: white;
+    font-size: 1em;
+    font-family: PP Sans-light;
+    text-align: left;
+    margin-left: 10%;
+}
+
+h1:hover {
+    color: rgb(255, 206, 44)
+}
+
+img {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.photo-eight {
+    height: auto;
+    width: 305px;
+}
+
+.photo-four {
+    height: auto;
+    width: 200px;
+}
+
+.photo-twelve {
+    height: auto;
+    width: 201px;
+}
+
+@media (max-width: 900px) {
+.flex-container {
+    flex-direction: column;
+}
+.poly-twelve {
+    float: right;
+}
+.poly-eight {
+    float: right;
+}
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.poly-four {
+    height: 15em;
+    width: 25%;
+}
+
+.poly-twelve {
+    height: 20em;
+    width: 30%;
+    margin-top: -100px;
+    margin-left: 75%;
+}
+
+.poly-eight {
+    height: 15em;
+    width: 25%;
+    margin-left: 38%;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    font-family: PP Sans-light;
+    font-size: 1em;
+    margin-top: 20px;
+    align-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.next:hover {
+    transform: translate(0, 10px);
+    color: rgb(255, 206, 44);
+}
+
+.back {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 1s;
+}
+
+.next {
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 0;
+    transition: ease-in-out 0.5s;
+}
+  
