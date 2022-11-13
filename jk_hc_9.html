@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <link rel="stylesheet" href="entry_8.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dvj8loo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dvj8loo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dvj8loo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dvj8loo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dvj8loo.css">
+    <script src="jk_hc_8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <h1><a href="jk_hc_main.html">Back</a></h1>
+    <div class="panel" data-color="Black">
+
+    <div class="main" style="position: relative;">
+        <div class="flex-container">
+            <div id="image-four">
+                <img src="videos/statues/statue four/main-image-2.jpeg" class="photo-four">
+                <h1 class="bottom-info">4. Antonius</h1>
+            </div>
+            <div id="image-eight">
+                <img src="videos/statues/statue eight/D3635-193WS.jpg" class="photo-eight">
+                <h1 class="bottom-info">8. Roman Bust</h1>
+            </div>
+            <div id="image-twelve">
+                <img src="videos/statues/statue twelve/l21261-c29c2-01-t1.jpg" class="photo-twelve" class="slides">
+                <h1 class="bottom-info">12. Hekataion Statue</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="container" id="three-d">
+            <model-viewer  class="poly-twelve" alt="3D Scan" src="videos/statues/statue twelve/poly.glb" shadow-intensity="1" exposure="1" camera-controls touch-action="pan-y"></model-viewer>
+        </div>
+
+        <div class="container" id="three-d-eight">
+            <model-viewer  class="poly-eight" alt="3D Scan" src="videos/statues/statue eight/poly.glb" shadow-intensity="1" exposure="1" camera-controls touch-action="pan-y"></model-viewer>
+        </div>
+
+        <div class="container" id="three-d-four">
+            <model-viewer  class="poly-four" alt="3D Scan" src="videos/statues/statue four/poly.glb" shadow-intensity="1" exposure="1" camera-controls touch-action="pan-y"></model-viewer>
+        </div>
+    </div>
+
+    </div>
+
+    <p id="demo"></p>
+
+      <div class="panel" data-color="indigo">
+      </div>
+      <div class="panel" data-color="blue">
+      </div>
+      <div class="panel" data-color="green">
+      </div>
+      <div class="panel" data-color="yellow">
+      </div>
+      <div class="panel" data-color="orange">
+      </div>
+      <div class="panel" data-color="red">
+      </div>
+
+    <script>
+       var imageTwelve = document.getElementById('image-twelve');
+       var imageEight = document.getElementById('image-eight');
+       var imageFour = document.getElementById('image-four');
+
+        imageTwelve.onclick = function() {
+        var text = document.getElementById('three-d');
+        if (text.style.display !== 'none') {
+            text.style.display = 'none';
+            }
+        else {
+            text.style.display = 'block';
+        }
+    };
+
+    imageEight.onclick = function() {
+        var textt = document.getElementById('three-d-eight');
+        if (textt.style.display !== 'none') {
+            textt.style.display = 'none';
+            }
+        else {
+            textt.style.display = 'block';
+        }
+    };
+
+
+    imageFour.onclick = function() {
+        var texttt = document.getElementById('three-d-four');
+        if (texttt.style.display !== 'none') {
+            texttt.style.display = 'none';
+            }
+        else {
+            texttt.style.display = 'block';
+        }
+    };
+
+
+    $(window).scroll(function() {
+  
+  // selectors
+  var $window = $(window),
+      $body = $('body'),
+      $panel = $('.panel');
+  
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height() / 3);
+ 
+  $panel.each(function () {
+    var $this = $(this);
+    
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+          
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+       
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });    
+  
+}).scroll();
+    </script>
+
+</body>
+</html>

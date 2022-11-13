@@ -1,0 +1,231 @@
+@font-face {
+    font-family: jaf-herb, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url();
+}
+
+@font-face {
+    font-family: Maleo;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-Regular.woff);
+}
+
+@font-face {
+    font-family: MaleoI;
+    src: url(Maleo-Trials/webfonts/MaleoTrials-MediumItalic.woff);
+}
+
+@font-face {
+    font-family: PP regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+}
+
+@font-face {
+    font-family: PP light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+}
+
+@font-face {
+    font-family: PP Sans-regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+}
+
+@font-face {
+    font-family: PP Sans-light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+}
+
+@font-face {
+    font-family: Sabon-bold;
+    src: url(Sabon-Font/Sabon_Bold.ttf);
+}
+
+@font-face {
+    font-family: Sabon-italic;
+    src: url(Sabon-Font/Sabon_Italic.ttf);
+}
+
+@font-face {
+    font-family: Sabon-roman;
+    src: url(Sabon-Font/Sabon_Roman.ttf);
+}
+
+@font-face {
+    font-family: halyard-text,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: PP Rader-Bold;
+    src: url(PPRader/PPRader-Bold.otf);
+}
+
+@font-face {
+    font-family: PP Gosha-Regular;
+    src: url(PPGoshaSans/PPGoshaSans-Regular.otf);
+}
+
+@font-face {
+    font-family: PP Right-Regular;
+    src: url(PP\ Right\ Grotesk/Text/PPRightGroteskText-Regular.otf);
+}
+
+@font-face {
+    font-family: PP NM-Medium;
+    src: url(PPNeueMontreal/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: PP Neue-Regular;
+    src: url(PP\ Neue\ Machina/PPNeueMachina-PlainRegular.otf);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+h2 {
+    color: white;
+    font-size: 3em;
+    font-family: PP light;
+    text-align: left;
+    margin-top: 50px;
+    padding-right: 100px;
+    transition: all .1s;
+    z-index: 2;
+    position: fixed;
+}
+
+h1 {
+    color: white;
+    font-size: 7em;
+    font-family: PP NM-Medium;
+    text-align: right;
+    margin-top: 28.45rem;
+    margin-left: 703px;
+    padding-right: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+h1:hover {
+    color:rgb(255, 206, 44);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2em;
+    }
+    h1 {
+        margin-left: 100px;
+        margin-top: 34rem;
+        font-size: 4em;
+    }
+}
+
+
+.text {
+    position: absolute;
+    margin-left: 20px;
+}
+
+.image-one {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.float {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.next:hover {
+    transform: translate(0, 10px);
+    color: rgb(255, 206, 44);
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    font-family: PP Sans-light;
+    font-size: 1em;
+    align-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.back {
+    text-align: left;
+    display: inline-block;
+    top: 0;
+    transition: ease-in-out 1s;
+    position: relative;
+    z-index: 2;
+}
+
+.next {
+    text-align: right;
+    float: right;
+    top: 0;
+    transition: ease-in-out 0.5s;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    #background_vid {
+        position: fixed;
+        pointer-events: none;
+    }}
+    
+    #background_vid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        /* z-index: -1; */
+    }
+    
+    #background_vid video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }

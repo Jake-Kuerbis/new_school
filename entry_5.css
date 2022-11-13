@@ -1,0 +1,265 @@
+@font-face {
+    font-family: jaf-herb, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url();
+}
+
+@font-face {
+    font-family: PP regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+}
+
+@font-face {
+    font-family: PP light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+}
+
+@font-face {
+    font-family: PP Sans-regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+}
+
+@font-face {
+    font-family: PP Sans-light;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+}
+
+@font-face {
+    font-family: Sabon-bold;
+    src: url(Sabon-Font/Sabon_Bold.ttf);
+}
+
+@font-face {
+    font-family: Sabon-italic;
+    src: url(Sabon-Font/Sabon_Italic.ttf);
+}
+
+@font-face {
+    font-family: Sabon-roman;
+    src: url(Sabon-Font/Sabon_Roman.ttf);
+}
+
+@font-face {
+    font-family: PP Rader-Bold;
+    src: url(PPRader/PPRader-Bold.otf);
+}
+
+@font-face {
+    font-family: PP Gosha-Regular;
+    src: url(PPGoshaSans/PPGoshaSans-Regular.otf);
+}
+
+@font-face {
+    font-family: PP Right-Regular;
+    src: url(PP\ Right\ Grotesk/Text/PPRightGroteskText-Regular.otf);
+}
+
+@font-face {
+    font-family: PP NM-Medium;
+    src: url(PPNeueMontreal/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: PP Neue-Regular;
+    src: url(PP\ Neue\ Machina/PPNeueMachina-PlainRegular.otf);
+}
+
+body {
+    background-color: black;
+    transition: background-color 1s ease;
+    overflow: hidden;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+.menu_title {
+    font-size: 2em;
+    font-family: PP Neue-Regular;
+    padding: 15px;
+}
+
+#sticky_holder{
+    position: fixed;
+    top: 1rem;
+    width: 100%;
+    z-index: 2;
+  }
+  #sticky_holder *{
+    color: white !important;
+  }
+  .sticky_hidden{
+    visibility: hidden;
+    pointer-events: none;
+  }
+  #sticky_holder .sticky_hidden{
+    height: 0px;
+  }
+
+div {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_row {
+    display: grid;
+    height: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+p {
+    margin-top: 50rem;
+}
+
+@media (max-width: 1024px)
+{.icon_holder {
+    padding: 1rem;
+}}
+
+@media (max-width: 1024px) {
+#background_vid {
+    position: fixed;
+    pointer-events: none;
+}}
+
+#background_vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -1; */
+}
+
+#background_vid video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: PP Sans-light;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    font-family: PP Sans-light;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgb(255, 206, 44)
+}
+
+@media (max-width: 900px) {
+.flex-container {
+    flex-direction: column;
+}
+.poly-twelve {
+    float: right;
+}
+.poly-eight {
+    float: right;
+}
+}
+
+@media (max-width: 1024px) {
+#title_click {
+    bottom: calc(100vh + 5rem);
+}}
+
+#title_click {
+    padding: 0rem 1rem 1rem 1rem;
+    position: absolute;
+    bottom: 40px;
+    transition: all .3s;
+}
+
+.zzz {
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+.disp_txt {
+    font-size: 40px;
+    line-height: 45px;
+}}
+
+.click_to_start {
+    cursor: pointer;
+}
+
+.white {
+    color: white;
+    font-size: 2em;
+    font-family: PP NM-Medium;
+}
+
+.white:hover {
+    transition: all .3s;
+    color:rgb(255, 206, 44);
+}
+
+#product_page {
+    background-color: lightgray;
+}
+
+#product_page {
+    position: absolute;
+    top: 0vh;
+    transition: top .5s cubic-bezier(0.78, 0.13, 0.15, 0.86);
+}
+
+.bleed_img_holder {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.bleed_img_holder img, .bleed_img_holder video {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
