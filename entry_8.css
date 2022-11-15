@@ -72,14 +72,13 @@
 }
 
 @font-face {
-    font-family: halyard-text,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    src: url(https://use.typekit.net/dvj8loo.css);
+    font-family: PP NM-Medium;
+    src: url(PPNeueMontreal/PPNeueMontreal-Medium.otf);
 }
 
 body {
     background-color: rgb(0, 0, 0);
+    transition: background-color 1s ease;
 }
 
 :any-link {
@@ -110,15 +109,37 @@ h1:hover {
     color: rgb(255, 206, 44)
 }
 
+.container {
+    margin-top: 170px;
+    margin-bottom: 285px;
+}
   
   .poly {
-    display: inline-block;
-    grid-column: 1;
-    grid-row: 1;
+    display: flex;
     margin: auto;
-    margin-top: 90px;
-    margin-bottom: 150px;
-    padding: 5%;
+    padding: 35px;
+    align-content: center;
+    height: 15em;
+    width: 22.5%;
+    border-radius: 40px;
+}
+
+.poly-2 {
+    display: flex;
+    margin: auto;
+    padding: 35px;
+    padding-top: 600px;
+    align-content: center;
+    height: 15em;
+    width: 22.5%;
+    border-radius: 40px;
+}
+
+.poly-3 {
+    display: flex;
+    margin: auto;
+    padding: 35px;
+    padding-top: 765px;
     align-content: center;
     height: 15em;
     width: 22.5%;
@@ -135,6 +156,75 @@ h1:hover {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+#sticky_holder{
+    position: fixed;
+    top: 45rem;
+    width: 95%;
+    z-index: 2;
+  }
+  #sticky_holder *{
+    color: white !important;
+  }
+  .sticky_hidden{
+    visibility: hidden;
+    pointer-events: none;
+  }
+  #sticky_holder .sticky_hidden{
+    height: 0px;
+  }
+
+  .text-1 {
+    font-size: 1em;
+    font-family: PP NM-Medium;
+  }
+
+  .text-2 {
+    font-size: 1em;
+    font-family: PP NM-Medium;
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 47%;
+  }
+
+  .text-3 {
+    font-size: 1em;
+    font-family: PP NM-Medium;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 47%;
+  }
+
+  
+  /* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 400px;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  /* colours */
+  .color-violet {
+    background-color: black;
+  }
+  .color-indigo {
+    background-color: #4332CF;
+  }
+  .color-blue {
+    background-color: #F19031;
+  }
+  .color-green {
+    background-color: #4DCF42;
+  }
+  .color-yellow {
+    background-color: #FAEB33;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: #F2293A;
+  }
 
 .next:hover {
     transform: translate(0, 10px);
