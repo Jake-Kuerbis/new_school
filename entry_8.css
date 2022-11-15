@@ -176,12 +176,12 @@ h1:hover {
 
   .text-1 {
     font-size: 1em;
-    font-family: PP NM-Medium;
+    font-family: PP Sans-light;
   }
 
   .text-2 {
     font-size: 1em;
-    font-family: PP NM-Medium;
+    font-family: PP Sans-light;
     position: absolute;
     margin-top: 490px;
     margin-left: 47%;
@@ -189,7 +189,7 @@ h1:hover {
 
   .text-3 {
     font-size: 1em;
-    font-family: PP NM-Medium;
+    font-family: PP Sans-light;
     position: absolute;
     margin-top: 700px;
     margin-left: 47%;
